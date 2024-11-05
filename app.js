@@ -43,13 +43,6 @@ process.env.JWT_SECRET = "gshekdewdwededknbeld3edjoend";
 process.env.JWT_EXPIRE = "5d";
 process.env.COOKIE_EXPIRE = "5";
 
-if(process.env.NODE_ENV!=="PRODUCTION"){
- const result= dotenv.config({path:"./.env"});
- if (result.error) {
-  throw result.error; // This will throw if there's an issue loading the .env file
-}
-console.log('Environment variables loaded:', result.parsed);
-}
 
 
 
